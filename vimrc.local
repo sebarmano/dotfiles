@@ -1,0 +1,89 @@
+" set relativenumber
+let &t_Co=256
+syntax enable
+set background=dark "other options -> light
+colorscheme solarized
+
+" Vim Hardtime (remove when done)
+" let g:hardtime_default_on = 1
+
+set foldenable
+set foldmethod=indent
+set foldlevel=999
+
+map :Q :q
+map :W :w
+map :X :x
+
+" Ctrl mappings
+map <C-t> <esc>:tabnew<CR><c-p>
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+
+" escape insert mode quickly
+imap jj <Esc>
+
+"highlight searches
+set hlsearch
+nnoremap <CR> :nohlsearch<CR><CR>
+
+" Save anytime we leave a buffer or Vim loses focus
+autocmd BufLeave,FocusLost * silent! wall
+
+" Remove trailing white space on save
+autocmd BufWritePre * :%s/\s\+$//e
+
+" Pastetoggle for pasting without leaving insert mode.
+set pastetoggle=<f5>
+
+" Alt mappings - check why is not working
+map <S-]> :vsp<CR>:exec("tag ".expand("<cword>"))<CR>
+" this is the temporal replacement
+map <leader>os :vsp<CR>:exec("tag ".expand("<cword>"))<CR>
+
+"move to a new vsplit after opening on top of the other file
+map <leader>vs :vs,,
+
+" Leader mappings
+map <leader>p :set paste<CR>o<esc>"*]p:set nopaste<cr>
+map <leader>fw :FixWhitespace<esc>:w<cr>
+map <leader>d <esc>obinding.pry<esc>
+map <leader>ss <esc>:!spring stop<cr>
+map <leader>sc <esc>:vs db/schema.rb<cr>
+map <leader>fr :call VimuxZoomRunner()<cr>
+
+" Folding and unfolding leader mappings
+nnoremap <leader>ff za
+nnoremap <leader>FF zA
+nnoremap <leader>fu zM<cr>
+nnoremap <leader>uf zR<cr>
+
+" Rubocop
+let g:vimrubocop_keymap = 0
+nmap <leader>rc :RuboCop<cr>
+
+" Dropbox note files
+nnoremap <leader>lf :vs ~/Dropbox/notes/log.md<cr>
+nnoremap <leader>nf :vs ~/Dropbox/notes/notes.md<cr>
+nnoremap <leader>td :vs ~/Dropbox/notes/todo.md<cr>
+
+" Vim Conflicted mappings (requires Vim Fugitive)
+let g:diffget_local_map = 'gl'
+let g:diffget_upstream_map = 'gu'
+
+" Write and source vim file
+nmap <Leader>sv :w<cr>:source ~/.vimrc<cr>
+
+" NERDTree
+nnoremap \ :NERDTreeToggle<CR>
+nnoremap <leader>f :NERDTreeFind<CR>
+
+let test#strategy="vimux"
+
+" FZF
+nnoremap <C-p> :GFiles<CR>
+nnoremap <C-f> :Files<CR>
+
+" TODO file shortcuts
+nnoremap <leader>at o- [ ]
+nnoremap <leader>e mx^t]rx`x:w<CR>
+nnoremap <leader>u mx^t]r `x
