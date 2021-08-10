@@ -1,4 +1,4 @@
 #/bin/sh
 
-cask "iterm2"
-brew "wtfutil"
+brew install iterm2
+brew install wtfutil
