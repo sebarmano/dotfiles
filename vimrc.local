@@ -10,6 +10,7 @@ colorscheme solarized
 set foldenable
 set foldmethod=indent
 set foldlevel=999
+set cscopetag
 
 map :Q :q
 map :W :w
