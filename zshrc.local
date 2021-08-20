@@ -17,8 +17,10 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 eval "$(starship init zsh)"
 
+# Antigen plugins
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle "chitoku-k/fzf-zsh-completions"
+
 antigen apply
 
 # source /Users/sebastianarmano/.asdf/asdf.sh
