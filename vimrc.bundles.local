@@ -20,6 +20,5 @@ Plug 'takac/vim-hardtime'
 Plug 'thoughtbot/vim-rspec'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-unimpaired'
-Plug 'vimwiki/vimwiki', { 'branch': 'dev' }
+Plug 'vimwiki/vimwiki'
 Plug 'vim-airline/vim-airline'
-" Plug 'neoclide/coc.nvim', { 'branch': 'release' }
