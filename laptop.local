@@ -7,6 +7,7 @@ brew install starship
 brew install fzf
 # To install useful key bindings and fuzzy completion:
 $(brew --prefix)/opt/fzf/install
+brew install lastpass-cli
 
 # Apps
 brew install slack
@@ -15,6 +16,9 @@ brew install --cask firefox-developer-edition
 brew install rectangle
 brew install --cask dash
 brew install --cask zoom
+brew install --cask aptible
+brew install --cask lastpass
+brew install --cask github
 
 # Mac App Store (need to sign in to install these apps)
 brew install mas
