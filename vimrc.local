@@ -1,11 +1,12 @@
-" set relativenumber
+let mapleader = ","
+set relativenumber
 let &t_Co=256
 syntax enable
 set background=dark "other options -> light
 colorscheme solarized
 
 " Vim Hardtime (remove when done)
-" let g:hardtime_default_on = 1
+let g:hardtime_default_on = 1
 
 set foldenable
 set foldmethod=indent

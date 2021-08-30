@@ -19,6 +19,8 @@ brew install --cask zoom
 brew install --cask aptible
 brew install --cask lastpass
 brew install --cask github
+brew install --cask ngrok
+brew install --cask postman
 
 # Mac App Store (need to sign in to install these apps)
 brew install mas
