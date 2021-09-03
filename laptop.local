@@ -18,9 +18,9 @@ brew install --cask dash
 brew install --cask zoom
 brew install --cask aptible
 brew install --cask lastpass
-brew install --cask github
 brew install --cask ngrok
 brew install --cask postman
+brew install --cask visual-studio-code
 
 # Mac App Store (need to sign in to install these apps)
 brew install mas

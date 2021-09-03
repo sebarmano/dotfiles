@@ -89,3 +89,7 @@ nnoremap <C-f> :Files<CR>
 nnoremap <leader>at o- [ ]
 nnoremap <leader>e mx^t]rx`x:w<CR>
 nnoremap <leader>u mx^t]r `x
+
+" Vimwiki markdown
+let g:vimwiki_list = [{'path': '~/vimwiki/',
+      \ 'syntax': 'markdown', 'ext': '.md'}]
