@@ -93,3 +93,5 @@ nnoremap <leader>u mx^t]r `x
 " Vimwiki markdown
 let g:vimwiki_list = [{'path': '~/vimwiki/',
       \ 'syntax': 'markdown', 'ext': '.md'}]
+
+set wildmode=full
