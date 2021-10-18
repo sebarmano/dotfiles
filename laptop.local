@@ -9,6 +9,7 @@ brew install fzf
 $(brew --prefix)/opt/fzf/install
 brew install lastpass-cli
 brew install overmind
+brew install shellcheck
 
 # Apps
 brew install slack

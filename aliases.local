@@ -1,6 +1,7 @@
 alias evf="v ~/.vimrc.local"
 alias eaf="v ~/.aliases.local"
 alias ebf="v ~/.vimrc.bundles.local"
+alias elf="v ~/.laptop.local"
 alias ezf="v ~/.zshrc.local"
 alias cc="git diff --name-only master | xargs codeclimate analyze"
 alias running_servers="lsof -wni tcp:7000"
