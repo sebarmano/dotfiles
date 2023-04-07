@@ -51,12 +51,13 @@ map <leader>fw :FixWhitespace<esc>:w<cr>
 map <leader>d <esc>obinding.pry<esc>
 map <leader>ss <esc>:!spring stop<cr>
 map <leader>sc <esc>:vs db/schema.rb<cr>
+" Not sure if the next one is working
 map <leader>fr :call VimuxZoomRunner()<cr>
 
 " Folding and unfolding leader mappings
 nnoremap <leader>ff za
 nnoremap <leader>FF zA
-nnoremap <leader>fu zM<cr>
+nnoremap leader>fu zM<cr>
 nnoremap <leader>uf zR<cr>
 
 " Rubocop
@@ -73,7 +74,7 @@ let g:diffget_local_map = 'gl'
 let g:diffget_upstream_map = 'gu'
 
 " Write and source vim file
-nmap <Leader>sv :w<cr>:source ~/.vimrc<cr>
+nmap <Leader>sv :w<cr>:source ~/init.vim<cr>
 
 " NERDTree
 nnoremap \ :NERDTreeToggle<CR>
